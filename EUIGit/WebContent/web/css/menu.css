@@ -1,0 +1,182 @@
+/* the horizontal menu starts here */
+
+/* replace #002FD7 with #3a728a due to rebranding initiative 10/17/2011 
+#09AFFF with #ffb300 
+#FFFFCC; with => menu hover #FFFFFF */
+div#listmenu {
+	/*width: 100%;/*1110px; /* makes the div full width */
+	height: 35px;
+	/*postion:absolute;
+	left:0px;*/
+	/* makes height sames as 'Forging America's Supply Chains' banner */
+	/*float: left; /*makes the div enclose the list */
+	/*border-top: 3px solid #4f758b; /* draws line on top edge of div */
+	border-bottom: 3px solid #4f758b;
+	/* draws line on bottom edge of div */
+	font-size: 14px; /* SET FONT-SIZE HERE */
+	/*font-weight:normal; */
+	font-weight: bold;
+	background-color: #4f758b; /* colors the div */
+	/*margin: 35px -200px 0px -200px;*/
+	/*margin:auto;
+	width:auto;*/
+	padding: 0px 0px 0px 0px;
+	display:block;
+}			
+
+div#listmenu ul {
+	width:100%;
+	position:absolute;
+	left:0px;
+	margin: 0 0 0 0px; /* indents ul from edge of container */
+	float:left;
+}
+
+div#listmenu li {
+	float: left;
+	/* causes the list to align horizontally instead of stack */
+	position: relative;
+	left:0px;
+	/* positioning context for the absolutely positioned drop-down */
+	list-style-type: none; /* removes the bullet off each list item */
+	/*background-color: #ffb300;*/
+	background-color:#4f758b;
+	/*sets the background of the menu items  #FFA*/
+	border-right: 1px solid #4f758b;
+	/* creates dividing lines between the li elements */
+	/*color:#CCCCCC; */
+	/*  #3a728a */
+}
+
+div#listmenu li:first-child {
+	border-left: 1px solid #4f758b;
+	/*the first vertical line on the menu */
+}
+
+div#listmenu li:hover {
+	background-color: #e5e5e5;
+	/*sets the background of the menu items #FFF*/
+}
+
+div#listmenu a {
+	display: block;
+	height: 29px;
+	/*makes list items in drop down highlight and wrapped lines indent correctly */
+	padding: 9px 10px 0px 10px; /*creates space each side of menu item's text */
+	text-decoration: none; /* removes the underlining of the link */
+	/*color: #4f758b; /* sets the type color */
+	color: #ffb300;
+	
+	
+}
+
+div#listmenu a:hover {
+	/* color:#F33; */
+	/*color: #4f758b;*/
+	color: #ffb300;
+}
+/* the horizontal menu ends here */
+
+
+/* the drop-down starts here */
+div#listmenu ul li ul {
+	/*margin: 0;
+	/* prevents the TEMP value inheriting from the horiz menu - OK to remove if you remove TEMP above */
+	/*position: absolute;
+	/* positions the drop-down ul in relation to its relatively positioned li parent */
+	width: 215px;
+	/*sets the width of the menu - in combo with the li's 100% width, makes the menu stack*/
+	left: 0px; /*aligns the drop exactly under the menu */
+	z-index: 2;
+}
+
+div#listmenu ul li ul li {
+	width:100%;/* makes the list items fill the list container (ul) */
+	border-left: 1px solid #4f758b;
+	/*  three sides of each drop-down item */
+	border-bottom: 1px solid #4f758b;
+	border-right: 1px solid #4f758b;
+	padding: 0 0 1px;
+	z-index: 2;
+}
+
+div#listmenu ul li ul li:first-child {
+	/*border-top: 1px solid #4f758b; /*the top edge of the dropdown */
+	border-top: 1px solid #4f758b;
+	z-index: 2;
+}
+/* make the drop-down display as the menu is rolled over */
+div#listmenu ul li ul {
+	display: none;
+} /* conceals the drop-down when menu not hovered */
+div#listmenu ul li:hover ul {
+	display: block;
+} /* shows the drop-down when the menu is hovered */
+
+/* pop-out starts here */
+body div#listmenu ul li ul li ul {
+	visibility: hidden; /* same effect as display:none in this situation */
+	top: -1px;
+	/*left: 140px;*/
+	z-index: 3;
+}
+
+div#listmenu ul li ul li:hover ul {
+	visibility: visible;
+} /* same effect as display:block in this situation */
+
+/* another level of pop-outs */
+div#listmenu ul li ul li:hover ul li ul {
+	display: none;
+} /* conceals the drop-down when menu not hovered */
+div#listmenu ul li ul li ul li:hover ul {
+	display: block;
+} /* shows the drop-down when the menu is hovered */
+
+
+
+
+/* THE HACK ZONE - */
+
+/* hack for IE (all flavors) so the menu has a vertical line on the left */
+* html div#listmenu ul {
+	float: left; /* makes the ul wrap the li's */
+	border-left: 1px solid #4f758b;
+	/* adds the rightmost menu vertical line to the ul */
+	margin: 0 0 0 2px; /* IE doubles the given value above - why? */
+}
+/* add a top line to drops and pops in IE browsers - can't read :first-child */
+* html  div#listmenu ul li ul {
+	border-top: 1px solid #4f758b;
+	border-left: 0px; /* stops the drop inheriting the ul border */
+}
+/* the Tantek hack to feed IE Win 5.5-5.0 a lower value to get the pop-out to touch the drop-down */
+* html  div#listmenu ul li ul li ul {
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	left: 140px;
+}
+/* and the "be nice to Opera" rule */
+html>body div#listmenu ul li ul li ul {
+	top: -1px;
+	/*left: 140px;*/
+}
+
+/* an Opera-only hack to fix a redraw problem by invisibly extending the ul */
+/* the first-level drop stays open for 100px below the bottom but at least it works */
+/* this can be reduced to as little as 22px if you don't have pop-outs */
+/* the pop-out menu stays open for 22px below the bottom but at least it works */
+@media all and (min-width: 0px) {
+	body div#listmenu ul li ul {
+		padding-bottom: 70px;
+	}
+	body div#listmenu ul li ul li ul {
+		padding-bottom: 22px;
+	}
+	body div#listmenu ul li ul li ul li ul li:hover {
+		visibility: visible;
+	} /* same effect as display:block in this situation */
+}
+/*end Opera hack */
+/* end of hack zone */
+/* END OF LIST-BASED MENU */

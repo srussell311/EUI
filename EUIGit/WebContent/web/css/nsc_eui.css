@@ -1,0 +1,1123 @@
+/*body {
+	font: 1.0em verdana, arial, sans-serif;
+	behavior: url(web/css/csshover.htc);
+	border: 5px solid #4f758b; 
+	border-radius: 25px;
+	margin:auto;
+	height:auto;
+	width:auto;
+	min-width:1200px;
+}*/
+
+
+
+div#netSetupDIV{
+	width:450px;
+}
+
+
+
+
+#InnerBorder {
+	text-align:center;
+	width:450px;
+	-moz-box-shadow: 0 5px 10px #ccc; 
+	-webkit-box-shadow: 0 5px 10px #ccc; 
+	box-shadow: 0px 0px 80px #000; behavior: url(PIE.htc); 
+	height:375px;
+	margin:0 auto;
+	display: block;	
+}
+
+ body {
+	font-family: tahoma, helvetica, sans-serif;
+	border: 5px solid #4f758b;
+	border-radius: 25px; 
+	/*font-size: x-small; */
+	font-size: 12px; 
+	color: #454545;
+	/*margin: 0 auto;
+	padding: 0px;
+	width: 90%;*/
+	min-width:1000px;
+	/*table-layout:fixed;*/
+	/*display:block;
+	overflow:auto;*/
+	height:1000px;
+ }
+
+#wrapper {
+	width: 1300px;
+	display:block;
+	overflow:auto;
+	margin: 0 auto 15px;
+	-moz-box-shadow: 0 5px 10px #ccc; 
+	-webkit-box-shadow: 0 5px 10px #ccc; 
+	box-shadow: 0px 0px 80px #000; behavior: url(PIE.htc); 
+	position: relative; 
+	/*min-height: 400px;*/
+	/*height:auto;*/
+	/*table-layout:fixed;*/
+}
+	
+
+
+
+
+/* change all #002FD7 with #3a728a for new branding initiative */
+
+/* TOMCAT version: body {font: 1.0em verdana, arial, sans-serif; behavior:url(./web/css/csshover.htc);}*/
+/* BEA version:    body {font: 1.0em verdana, arial, sans-serif; behavior:url(/csshover.htc);}*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.clearthefloats {
+	clear: both;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+html  { /*Added by SR 2/27/18*/
+	font-family: tahoma, helvetica, sans-serif; 
+	/*font-size: x-small; */
+	font-size: 12px; 
+	color: #454545;
+	margin: 0 auto;
+	padding: 0;
+	width: 85%;
+	/*height:auto;*/
+	/*text-align: center;*/ 
+	background: url(../images/test-map.png);
+}
+
+.clearfix {
+	display: inline-block;
+} /* A fix for IE Mac */
+* html .clearfix {
+	height: 1%;
+} /* The Holly hack for a but in IE6 for Windows */
+.clearfix {
+	display: block;
+} /* The Holly hack for a but in IE6 for Windows */
+* html .fixme {
+	height: 1%;
+} /* Holly Hack */
+div#background {
+	height: 77px; /* 77px */
+	margin: 0 0 0 6px;
+	padding: 0;
+	text-align: center;
+	/*width:85%;*/
+	/*background-image: url(../images/NSCBackgroundArrows.png);*/
+	/*background-image: url(../images/test-map.png);*/
+	/* relative to the jsp folder, cuz home.jsp includes this css */
+	/*background-repeat: repeat-x;*/
+}
+
+div#header {
+	border: 1px /* solid orange; */ height:83px /* 79px */;
+	/*width: 1110px;*/
+	text-align: center;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	/*background-color: #4f758b;;*/
+}
+
+/*div#border{
+	border: 5px solid #4f758b; 
+	border-radius: 25px;
+	margin:auto;
+	height:auto;
+	width:auto;
+}*/
+
+div#header img { /*border:2px solid black;*/
+	position: absolute;
+	top: 35px;
+	left: 50px;
+	margin: 0;
+	padding: 0
+}
+
+div#header h1 { /*border:2px solid red;*/
+	/*position: absolute;*/
+	/*left: 375px;
+	top: 34px;
+	width: 350px;*/
+	margin: 0px;
+	padding: 0px;
+	font: 24px; /*bold "Arial Unicode MS", arial, sans-serif;*/
+	text-align: center;
+	color: #4f758b;
+}
+
+div#header h2 {
+	height: 23px;
+	padding: 2px 0 1px 0;
+	margin-top: 0;
+	/*margin-right: auto;
+	margin-left: auto;*/
+	font: bold 24px "Arial Unicode MS", arial, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: #4f758b;
+	/*color: #FFFFFF;*/
+	
+	letter-spacing: .3em;
+}
+
+/*div#centerTable{
+	position:relative;
+	width:80%;
+	text-align:center;
+}*/
+
+div#inputField {
+	text-align: center;
+	position: absolute;
+	/*width: 1500px;*/
+	margin:auto;
+	top: 200px;
+	left: 0px;
+	right:0px;
+	/*margin: 0 0 0 10px;*/
+	padding: .5em .5em .5em 0;
+	/*padding:0px 0px 0px 200px;*/
+	/*font-weight: bold;*/
+	font-size: 1.3em;
+	/*border-top: 2px solid #4f758b;
+	border-bottom: 1px solid #4f758b;*/
+	z-index:1;
+ 
+}
+
+div#inputField #netSetup{
+	position:absolute;
+	padding: 10px 10px 10px 10px;
+	top:135px;
+	left:170px;
+	right:685px;
+	bottom:120px;
+	border: 5px solid #4f758b;
+	box-shadow: 0px 0px 60px #000; behavior: url(PIE.htc);
+	border-radius: 25px;
+	width:450px;
+	height:375px;
+}
+
+div#inputField #netSetup textarea{
+	width:200px;
+	height:130px;
+}
+
+div#inputField #catalogSetup{
+	position:absolute;
+	padding: 10px 10px 10px 10px;
+	top:135px;
+	left:680px;
+	right:0px;
+	bottom:0px;
+	border: 5px solid #4f758b;
+	box-shadow: 0px 0px 60px #000; behavior: url(PIE.htc);
+	border-radius: 25px;
+	width:450px;
+	height:245px;
+}
+
+div#inputField #corpCont{
+	position:absolute;
+	padding: 10px 10px 10px 10px;
+	border: 5px solid #4f758b;
+	box-shadow: 0px 0px 60px #000; behavior: url(PIE.htc);
+	border-radius: 25px;
+	left:250px;
+	right:0px;
+	bottom:0px;
+	top:375px;
+	width:800px;
+	height:240px;
+}
+
+div#inputField #usrSetup{
+	position:absolute;
+	padding: 10px 10px 10px 10px;
+	border: 5px solid #4f758b;
+	box-shadow: 0px 0px 60px #000; behavior: url(PIE.htc);
+	border-radius: 25px;
+	left:250px;
+	right:0px;
+	bottom:0px;
+	top:135px;
+	width:800px;
+	height:200px;
+}
+
+
+
+div#inputField #usrSetup textarea{
+	width:225px;
+	height:90px;
+}
+
+div#inputField #accountMain{
+	position:absolute;
+	padding: 10px 10px 10px 10px;
+	border: 5px solid #4f758b;
+	box-shadow: 0px 0px 60px #000; behavior: url(PIE.htc);
+	border-radius: 25px;
+	left:425px;
+	right:0px;
+	bottom:0px;
+	top:135px;
+	width:450px;
+	height:575px;
+}
+
+div#inputField #accountConnect{
+	position:absolute;
+	padding: 10px 10px 10px 10px;
+	border: 5px solid #4f758b;
+	box-shadow: 0px 0px 60px #000; behavior: url(PIE.htc);
+	border-radius: 25px;
+	left:425px;
+	right:0px;
+	bottom:0px;
+	top:250px;
+	width:450px;
+	height:275px;
+}
+
+div#inputField #saveCancel input{
+	position:absolute;
+	top:700px;
+	left:450px;
+	right:0px;
+	bottom:0px;
+	width:150px;
+	height: 25px;
+}
+
+div#inputField #ediTable{
+	position:absolute;
+	padding: 10px 10px 10px 10px;
+	border: 5px solid #4f758b;
+	box-shadow: 0px 0px 80px #000; behavior: url(PIE.htc);
+	border-radius: 25px;
+	left:425px;
+	right:0px;
+	bottom:0px;
+	top:135px;
+	width:475px;
+	height:350px;
+}
+
+div#inputField #ediTable textarea{
+	width:225px;
+	height:90px;
+}
+
+
+div#inputField a {
+	font-size: .80em;
+	color: #4f758b;
+	text-decoration: underline;
+	letter-spacing: -.04em;
+	padding: 2em 0 0 0;
+}
+
+div#inputField a:hover {
+	color: #4f758b;
+	text-decoration: underline;
+}
+
+div#inputField table {
+	/*padding:0px 0px 0px 120px;*/
+	/*position:relative;*/
+	text-align:center;
+	/*display:block;*/
+	/*width:auto;*/
+	/*padding: 15px 50px 15px 50px;
+	/*height:auto;
+	margin:auto;
+	/*margin-left:auto;
+	margin-right:auto;*/
+	/*border: 5px solid #4f758b;*/
+	/*border-radius: 25px;
+	/*-moz-box-shadow: 0 5px 5px #ccc; 
+	-webkit-box-shadow: 0 5px 5px #ccc; 
+	/*box-shadow: 0px 0px 80px #000; behavior: url(PIE.htc); 
+	/*border: solid black 10px;*/
+	/*display:block;*/
+}
+
+div#inputField td {
+	text-align: left;
+	vertical-align: top;
+	padding: 2px;
+}
+
+div#inputField th {
+	text-align: right;
+	padding: 2px;
+}
+
+div#inputField td input[type="text"] {
+	height: 18px;
+} /* width:75px;*/
+div#inputField td input[type="checkbox"] {
+	width: 15px;
+	height: 18px;
+	font-size:30px;
+}
+
+div#inputField td input[type="button"] {
+	width: 100px;
+	height: 25px;
+}
+
+div#inputField p {
+	margin: 0 0 15px 0;
+	color: #4f758b;
+	font: 20px bold "Arial Unicode MS", arial, sans-serif;
+}
+
+/* for Member Access report */
+div#inputFieldM {
+	text-align: center;
+	/*position: absolute;
+	width: 1100px;
+	top: 145px;
+	left: 200px;
+	margin: 0 0 0 10px;
+	padding: .5em .5em .5em 0;*/
+	font-weight: bold;
+	font-size: .95em;
+}
+
+/* border-top:2px solid #3a728a; border-bottom:1px solid #3a728a; */
+div#inputFieldM a {
+	font-size: .80em;
+	color: #4f758b;
+	text-decoration: none;
+	letter-spacing: -.04em;
+	padding: 2em 0 0 0;
+}
+
+div#inputFieldM a:hover {
+	color: #4f758b;
+	text-decoration: underline;
+}
+
+div#inputFieldM table {
+	text-align: center;
+	border: solid black 0px;
+}
+
+div#inputFieldM td {
+	text-align: center;
+	vertical-align: top;
+	padding: 2px;
+}
+
+div#inputFieldM th {
+	text-align: right;
+	padding: 2px;
+}
+
+div#inputFieldM td input[type="text"] {
+	height: 18px;
+} /* width:75px;*/
+div#inputFieldM td input[type="checkbox"] {
+	width: 15px;
+	height: 18px;
+}
+
+div#inputFieldM td input[type="button"]  {
+	width: 100px;
+	height: 25px;
+}
+
+div#inputFieldM p {
+	margin: 0 0 15px 0;
+	color:#4f758b;
+	font: 20px bold "Arial Unicode MS", arial, sans-serif;
+}
+
+div#actionField {
+	text-align: center;
+	position: absolute;
+	width: 1100px;
+	top: 230px;
+	left: 0px;
+	margin: 0 0 0 10px;
+	padding: .5em .5em .5em 0;
+	font-size: .80em;
+	border-bottom: 1px solid #CCCCCC;
+}
+/* font-weight:bold; border-top:2px solid #CCCCCC;  */
+div#actionField a {
+	font-size: 9px;
+	color: #4f758b;
+	text-decoration: underline;
+	letter-spacing: -.04em;
+	padding: 2em 0 0 0;
+}
+
+div#actionField a:hover {
+	/*color: #006699;*/
+	color: #4f758b;
+	text-decoration: underline;
+}
+
+div#actionField table {
+	text-align: center;
+	border: solid black 0px;
+}
+/*div#actionField tr:hover {text-align:left;padding: 2px; vertical-align:top; font-size:9px; background-color:#FFFFCC;} */
+div#actionField td {
+	text-align: left;
+	padding: 2px;
+	vertical-align: top;
+	font-size: 9px;
+	font-weight: normal
+}
+
+div#actionField th {
+	text-align: left;
+	padding: 2px;
+	font-size: 9px
+}
+
+div#actionField td input[type="text"] {
+	height: 15px;
+	font-size: 9px
+} /* width:75px; */
+div#actionField td input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+
+div#actionField p {
+	margin: 0 0 15px 0;
+	color: #CCCCCC;
+	font: 20px bold "Arial Unicode MS", arial, sans-serif;
+}
+
+/* used for new items, etc. - formulary header info listed above */
+div#actionFieldI {
+	text-align: center;
+	position: absolute;
+	width: 1100px;
+	top: 400px;
+	left: 0px;
+	margin: 0 0 0 10px;
+	padding: .5em .5em .5em 0;
+	font-size: .80em;
+	border-bottom: 1px solid #CCCCCC;
+}
+/* font-weight:bold; border-top:2px solid #CCCCCC;  */
+div#actionFieldI a {
+	font-size: .80em;
+	color: #4f758b;
+	text-decoration: underline;
+	letter-spacing: -.04em;
+	padding: 2em 0 0 0;
+}
+
+div#actionFieldI a:hover {
+	color: #CCCCCC;
+	text-decoration: underline;
+}
+
+div#actionFieldI table {
+	text-align: center;
+	border: solid black 0px;
+}
+/*div#actionField tr:hover {text-align:left;padding: 2px; vertical-align:top; font-size:9px; background-color:#FFFFCC;} */
+div#actionFieldI td {
+	text-align: left;
+	padding: 2px;
+	vertical-align: top;
+	font-size: 9px
+}
+
+div#actionFieldI th {
+	text-align: left;
+	padding: 2px;
+	font-size: 9px
+}
+
+div#actionFieldI td input[type="text"] {
+	height: 15px;
+	font-size: 9px
+} /* width:75px; */
+div#actionFieldI td input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+
+div#actionFieldI p {
+	margin: 0 0 15px 0;
+	color: #CCCCCC;
+	font: 20px bold "Arial Unicode MS", arial, sans-serif;
+}
+
+/* used for new items, etc. - formulary header info listed above */
+div#actionFieldF {
+	text-align: center;
+	position: absolute;
+	width: 1100px;
+	top: 280px;
+	left: 0px;
+	margin: 0 0 0 10px;
+	padding: .5em .5em .5em 0;
+	font-size: .80em;
+	border-bottom: 1px solid #CCCCCC;
+}
+/* font-weight:bold; border-top:2px solid #CCCCCC;  */
+div#actionFieldF a {
+	font-size: .80em;
+	color: #4f758b;
+	text-decoration: underline;
+	letter-spacing: -.04em;
+	padding: 2em 0 0 0;
+}
+
+div#actionFieldF a:hover {
+	color: #CCCCCC;
+	text-decoration: underline;
+}
+
+div#actionFieldF table {
+	text-align: center;
+	border: solid black 0px;
+}
+/*div#actionField tr:hover {text-align:left;padding: 2px; vertical-align:top; font-size:9px; background-color:#FFFFCC;} */
+div#actionFieldF td {
+	text-align: left;
+	padding: 2px;
+	vertical-align: top;
+	font-size: 9px
+}
+
+div#actionFieldF th {
+	text-align: left;
+	padding: 2px;
+	font-size: 9px
+}
+
+div#actionFieldF td input[type="text"] {
+	height: 15px;
+	font-size: 9px
+} /* width:75px; */
+div#actionFieldF td input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+
+div#actionFieldF p {
+	margin: 0 0 15px 0;
+	color: #CCCCCC;
+	font: 20px bold "Arial Unicode MS", arial, sans-serif;
+}
+
+div#actionFieldMM {
+	text-align: center;
+	position: absolute;
+	/*width:100%; /*1100px;*/
+	top: 160px;
+	/*left: 0px;*/
+	/*margin: 0 0 0 10px;*/
+	margin:auto;
+	/*height:auto;*/
+	width:100%;
+	padding: .5em .5em .5em 0;
+	font-size: 1em;
+
+	/*border-bottom: 1px solid #CCCCCC;*/
+}
+/* font-weight:bold; border-top:2px solid #CCCCCC;  */
+div#actionFieldMM a {
+	font-size: 9px;
+	color: #4f758b;
+	text-decoration: underline;
+	letter-spacing: -.04em;
+	padding: 2em 0 0 0;
+}
+
+div#actionFieldMM a:hover {
+	/*color: #006699;*/
+	color: #e5e5e5;
+	text-decoration: underline;
+}
+
+div#actionFieldMM table {
+	text-align: center;
+	border: solid black 0px;
+	width:100%;
+}
+/*div#actionField tr:hover {text-align:left;padding: 2px; vertical-align:top; font-size:9px; background-color:#FFFFCC;} */
+div#actionFieldMM td {
+	text-align: center;
+	padding: 2px;
+	vertical-align: top;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+div#actionFieldMM th {
+	text-align: left;
+	padding: 2px;
+	font-size: 12px
+}
+
+div#actionFieldMM td input[type="text"] {
+	height: 15px;
+	font-size: 12px
+} /* width:75px; */
+div#actionFieldMM td input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+/*
+div#actionFieldMM td input[type="select"]{font-size:9px;}
+div#actionFieldMM td input[type="option"]{font-size:9px;}
+*/
+div#actionFieldMM p {
+	margin: 0 0 15px 0;
+	color: #CCCCCC;
+	font: 20px bold "Arial Unicode MS", arial, sans-serif;
+}
+
+div#reportField {
+	text-align: center;
+	position: absolute;
+	width: 1100px;
+	top: 310px;
+	left: 0px;
+	margin: 0 0 0 10px;
+	padding: .5em .5em .5em 0;
+	font-size: .80em;
+	border-bottom: 1px solid #CCCCCC;
+}
+/* font-weight:bold; border-top:2px solid #CCCCCC;  */
+div#reportField a {
+	font-size: 9px;
+	color: #4f758b;
+	text-decoration: underline;
+	letter-spacing: -.04em;
+	padding: 2em 0 0 0;
+} /*  font-size:.80em; */
+div#reportField a:hover {
+	/*color: #006699;*/
+	color: #e5e5e5;
+	text-decoration: underline;
+}
+
+div#reportField table {
+	text-align: center;
+	border: solid black 0px;
+}
+/*div#reportField tr:hover {text-align:left;padding: 2px; vertical-align:top; font-size:9px; background-color:#FFFFCC;} */
+div#reportField td {
+	text-align: left;
+	padding: 2px;
+	vertical-align: top;
+	font-size: 9px;
+	font-weight: normal;
+}
+
+div#reportField th {
+	text-align: left;
+	padding: 2px;
+	font-size: 9px;
+	vertical-align: text-top;
+}
+
+div#reportField td input[type="text"] {
+	height: 15px;
+	font-size: 9px;
+} /* width:75px; */
+div#reportField td input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+
+div#reportField p {
+	margin: 0 0 15px 0;
+	color: #CCCCCC;
+	font: 20px bold "Arial Unicode MS", arial, sans-serif;
+}
+
+div#reportField1 {
+	text-align: center;
+	position: absolute;
+	width: 1100px;
+	top: 250px;
+	left: 0px;
+	margin: 0 0 0 10px;
+	padding: .5em .5em .5em 0;
+	font-size: .80em;
+	border-bottom: 1px solid #CCCCCC;
+}
+/* font-weight:bold; border-top:2px solid #CCCCCC;  */
+div#reportField1 a {
+	font-size: 9px;
+	color: #4f758b;
+	text-decoration: underline;
+	letter-spacing: -.04em;
+	padding: 2em 0 0 0;
+}
+
+div#reportField1 a:hover {
+	/*color: #006699;*/
+	color: #e5e5e5;
+	text-decoration: underline;
+}
+
+div#reportField1 table {
+	text-align: center;
+	border: solid black 0px;
+}
+/*div#reportField tr:hover {text-align:left;padding: 2px; vertical-align:top; font-size:9px; background-color:#FFFFCC;} */
+div#reportField1 td {
+	text-align: left;
+	padding: 2px;
+	vertical-align: top;
+	font-size: 9px;
+	font-weight: normal;
+}
+
+div#reportField1 th {
+	text-align: left;
+	padding: 2px;
+	font-size: 9px;
+	vertical-align: text-top;
+}
+
+div#reportField1 td input[type="text"] {
+	height: 15px;
+	font-size: 9px;
+} /* width:75px; */
+div#reportField1 td input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+
+div#reportField1 p {
+	margin: 0 0 15px 0;
+	color: #CCCCCC;
+	font: 20px bold "Arial Unicode MS", arial, sans-serif;
+}
+
+div#reportField2 {
+	text-align: center;
+	position: absolute;
+	width: 1100px;
+	top: 280px;
+	left: 0px;
+	margin: 0 0 0 10px;
+	padding: .5em .5em .5em 0;
+	font-size: 9px;
+}
+/* font-weight:bold; border-top:2px solid #CCCCCC; border-bottom:1px solid #CCCCCC; */
+div#reportField2 a {
+	font-size: 9px;
+	color: #4f758b;
+	text-decoration: underline;
+	letter-spacing: -.04em;
+	padding: 2em 0 0 0;
+}
+
+div#reportField2 a:hover {
+	/*color: #006699;*/
+	color: #e5e5e5;
+	text-decoration: underline;
+}
+
+div#reportField2 table {
+	text-align: center;
+	border: solid black 0px;
+}
+/*div#reportField tr:hover {text-align:left;padding: 2px; vertical-align:top; font-size:9px; background-color:#FFFFCC;} */
+div#reportField2 td {
+	text-align: left;
+	padding: 2px;
+	vertical-align: text-top;
+	font-size: 9px;
+	font-weight: normal;
+}
+
+div#reportField2 th {
+	text-align: left;
+	padding: 2px;
+	font-size: 9px;
+}
+
+div#reportField2 td input[type="text"] {
+	height: 15px;
+	font-size: 9px;
+} /* width:75px; */
+div#reportField2 td input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+/* div#reportField2 p {margin:0 0 15px 0; color:#CCCCCC; font: 20px bold "Arial Unicode MS", arial, sans-serif;} */
+div#reportField3 {
+	text-align: center;
+	position: absolute;
+	width: 1100px;
+	top: 200px;
+	left: 0px;
+	margin: 0 0 0 10px;
+	padding: .5em .5em .5em 0;
+	font-size: .80em;
+	border-bottom: 1px solid #CCCCCC;
+}
+/* font-weight:bold; border-top:2px solid #CCCCCC;  */
+div#reportField3 a {
+	font-size: 9px;
+	color: #4f758b;
+	text-decoration: underline;
+	letter-spacing: -.04em;
+	padding: 2em 0 0 0;
+}
+
+div#reportField3 a:hover {
+	/*color: #006699;*/
+	color: #e5e5e5;
+	text-decoration: underline;
+}
+
+div#reportField3 table {
+	text-align: center;
+	border: solid black 0px;
+}
+/*div#reportField tr:hover {text-align:left;padding: 2px; vertical-align:top; font-size:9px; background-color:#FFFFCC;} */
+div#reportField3 td {
+	text-align: left;
+	padding: 2px;
+	vertical-align: top;
+	font-size: 9px;
+	font-weight: normal;
+}
+
+div#reportField3 th {
+	text-align: left;
+	padding: 2px;
+	font-size: 9px;
+	vertical-align: text-top;
+}
+
+div#reportField3 td input[type="text"] {
+	height: 15px;
+	font-size: 9px;
+} /* width:75px; */
+div#reportField3 td input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+
+div#reportField3 p {
+	margin: 0 0 15px 0;
+	color: #CCCCCC;
+	font: 20px bold "Arial Unicode MS", arial, sans-serif;
+}
+
+div#reportResults {
+	text-align: center;
+	position: absolute;
+	width: 1100px;
+	top: 310px;
+	left: 0px;
+	margin: 0 0 0 10px;
+	padding: .5em .5em .5em 0;
+	font-size: 9px;
+	height: 1%;
+	display: inline;
+}
+
+div#reportResults a:hover {
+	/*color: #006699;*/
+	color: #e5e5e5;
+	text-decoration: underline;
+}
+
+div#reportResults table {
+	text-align: center;
+	border: solid black 0px;
+}
+
+div#reportResults td {
+	text-align: left;
+	padding: 2px;
+	font-size: 9px;
+	font-weight: normal;
+}
+
+div#reportResults th {
+	text-align: left;
+	padding: 2px;
+	font-size: 9px;
+}
+
+TH.border-left {
+	border-left: solid 1px #FFFFFF;
+}
+
+TH.border-right {
+	border-right: solid 1px #FFFFFF;
+}
+
+TH.border-both {
+	border-left: solid 1px #FFFFFF;
+	border-right: solid 1px #FFFFFF;
+}
+
+TR.even {
+	background-color: white;
+}
+
+TR.odd {
+	background-color: #E1E1E1;
+}
+
+TABLE.generateReport {
+	position: absolute;
+	top: 5px;
+	left: 720px;
+	font: normal 10px "Arial Unicode MS", arial, sans-serif;
+}
+
+TABLE.generateReport input {
+	font-size: 9pt;
+}
+
+/* style="border-left:solid 1px #000000"  
+	p.solid {border-style: solid; } 
+	p.double {border-style: double; } 
+	p.groove {border-style: groove; } 
+	p.dotted {border-style: dotted; } 
+	p.dashed {border-style: dashed; } 
+	p.inset {border-style: inset; } 
+	p.outset {border-style: outset; } 
+	p.ridge {border-style: ridge; }
+*/
+div#help {
+	text-align: left;
+	position: absolute;
+	width: 1100px;
+	top: 145px;
+	left: 0px;
+	margin: 0 0 0 10px;
+	padding: .5em .5em .5em 0;
+	font-weight: normal;
+	font-size: 12px;
+}
+/*border-top:2px solid #3a728a; border-bottom:1px solid #3a728a; */
+div#help a {
+	font-size: 12px;
+	color: #4f758b;
+	text-decoration: underline;
+	letter-spacing: -.04em;
+	padding: 2em 0 0 0;
+}
+
+div#help a:hover {
+	color: #4f758b;
+	text-decoration: underline;
+}
+
+div#help table {
+	text-align: center;
+	border: solid black 0px;
+}
+
+div#help td {
+	text-align: center;
+	vertical-align: top;
+	padding: 2px;
+}
+
+div#help p {
+	margin: 0 0 15px 0;
+	font: 15px bold "Arial Unicode MS", arial, sans-serif;
+}
+
+div#help li {
+	font-size: 12px;
+	list-style: decimal;
+	list-style-position: inside
+}
+
+div#help ol {
+	font-size: 12px;
+	margin: auto;
+	list-style: decimal;
+	list-style-position: inside
+}
+
+.subTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	/* color: 003366; */
+	color: #4f758b;
+}
+
+.highlightRow {
+	background-color: #FFFFCC;
+}
+
+.requiredField {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.newI {
+	text-align: left;
+	padding: 2px;
+	vertical-align: top;
+	font-size: 9px;
+	/*color: #006699;*/
+	color: #e5e5e5;
+	font-weight: bold;
+}
+
+.helpText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+.totRecords {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	/*color: #006699;*/
+	color: #e5e5e5;
+	text-align: left
+}
+
+.formF {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: left
+}
+
+.errorField {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF0000;
+	font-weight: bold;
+}
